@@ -3,4 +3,10 @@ Rails.application.routes.draw do
 
 	# Look at the PostsController and then the index method
 	root 'posts#index'
+
+	# Example of a regular route
+	get 'about' => 'pages#about'
+
+	# Maps HTTP verbs too controller actions
+	resources :posts
 end
